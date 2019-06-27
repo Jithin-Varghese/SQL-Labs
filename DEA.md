@@ -16,5 +16,14 @@ To complete this tutorial, you need to
 1.  Download and Install Database Experimentation Assistant 2.6 on your laptop.  
 2.  Bring your own source database that has queries running   
     or 
-    Setup a source database on your laptop using the steps described below.
+    Setup a source database on your laptop using the steps described below.  
+    
+    To setup a test database on your laptop to use as source for this exercise:  
+1.	Download the backup file located here.  
+2.	Open SQL Server Management Studio.  
+3.	Right click on Databases and select Restore Database.  
+4.	In the pop-up, select Device and click on the … button.   
+5.	In the select backup devices pop-up, click Add button.   
+
+
 
