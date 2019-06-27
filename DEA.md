@@ -18,7 +18,7 @@ To complete this tutorial, you need to
     or 
     Setup a source database on your laptop using the steps described below.  
     
-    To setup a test database on your laptop to use as source for this exercise:  
+To setup a test database on your laptop to use as source for this exercise:  
 1.	Download the backup file located here.  
 2.	Open SQL Server Management Studio.  
 3.	Right click on Databases and select Restore Database.  
