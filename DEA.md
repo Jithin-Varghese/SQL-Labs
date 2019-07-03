@@ -114,6 +114,44 @@ The second step is to replay the captured workload on your Azure SQL Database. T
     
 <image>  
     
+3.	Provide necessary inputs to begin replay:  
+
+**Replay Details**  
+a.	Replay name: name for your replay session.  
+b.	Source Trace Format: Format of the trace captured in the capture step. Select XEvents for this exercise.  
+c.	Source Trace Location: Location of the trace files captured in the capture step. Choose Local for this exercise.   
+  i.	Local: If your files in the local disk or any file share locations  
+  ii.	Blob: If your trace files are copied over to a blob storage.  
+d.	Full path to Source File: The path where you have your source trace. Provide the same path you gave in 3(d) above.  
+  i.	For Blob: Provide Azure blob container’s Shared Access Signature (SAS) key URL. Refer this link for setting up blob container for capturing and storing XEvents from Azure SQL DB and/or Azure SQL Managed Instance.  
+  ii.	For Local: Drive path to store the files (ensure that you have enough storage on this drive). UNC paths are also accepted if SQL Server has permissions to write to that folder.  
+e.	Replay Tool: The type of replay tool you want to use to replay your workloads. Two types of replay methods are supported. We will use InBuilt for this exercise.  
+  i.	DReplay: SQL Server Distributed Replay that ships with SQL Server product. Currently supports only replaying trace files and to SQL Box products configured to use windows authentication  
+  ii.	InBuilt: Use this option to replay XEvents based traces against any SQL Server version, supports both windows and SQL Server authentication.  
+f.	Replay Trace location: The location where you want to store your trace files that we capture while replaying your workload to target server. The value for this field depends on the type of the server that you are going to run your capture session.  
+   i.	Azure SQL DB / Azure SQL Managed Instance: Provide Azure blob container’s Shared Access Signature (SAS) key URL. Refer this link for setting up blob container for capturing and storing XEvents from Azure SQL DB and/or Azure SQL Managed Instance.  
+  ii.	SQL Server: Drive path to store the files (ensure that you have enough storage on this drive). UNC paths are also accepted as long as SQL Server has permissions to write to that folder
+  iii.	SQL Server on Linux: Volume path
+
+**SQL Server connection details**  
+g.	Server Type: The type of the server to which you want to replay the traces / XEvents. For this tutorial, select Azure SQL Database.
+  i.	SQL Server – All the box product versions from SQL 2005 to SQL 2017 including SQL Server on Linux  
+  ii.	Azure SQL DB – Single Database Azure SQL PaaS  
+  iii.	Azure SQL Managed Instance – Fully managed SQL Server with option to host multiple databases.  
+h.	Server Name: SQL Server instance name you would like to capture trace from.  
+  i.	Authentication Type: The type of the authentication you want to use to connect to the SQL Server  
+  i.	Windows: Use this when your SQL Server is connected to Active Directory  
+  ii.	SQL Authentication: Use this when your SQL Server is configured for SQL Authentication  
+j.	Database name: Name of the database on the SQL Server to capture trace from   
+i.	For Azure SQL DB, you need to provide the name of the database.   
+k.	Encrypt connection: Encrypts the connection between DEA and SQL Server  
+l.	Trust server certificate: Trust the certificate installed on the SQL Server for encryption.  
+m.	Username: Name of the SQL User  
+n.	Password: Password for the SQL User  
+After providing all necessary inputs, double check that you have restored the backup from the first step, check the checkbox to indicate this, and press Start to start replay. Much like New Capture, you will be able to see the status of your replay. After replaying the source trace on both of your target servers, are ready to generate analysis report.  
+Check out this FAQ page for commonly asked questions for Replay.  
+
+    
 
 
 
