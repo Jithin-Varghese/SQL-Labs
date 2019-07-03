@@ -106,7 +106,14 @@ Check out this FAQ page for frequently asked questions for Capture.
 The second step is to replay the captured workload on your Azure SQL Database. This needs to be the exact same database you collected capture from. For this exercise use the Azure SQL database we provided.  
 
 ### Start New Replay
-1.	Launch DEA and go to All replays screen by clicking on the arrow icon on the left navigation
+1.	Launch DEA and go to All replays screen by clicking on the arrow icon on the left navigation  
+
+<image>  
+    
+2.	Click the New Replay Button to open the new replay screen
+    
+<image>  
+    
 
 
 
