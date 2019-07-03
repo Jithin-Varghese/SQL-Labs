@@ -102,6 +102,11 @@ Any errors that occur during the capture progress will be displayed in the captu
 You can start multiple capture sessions while waiting for this capture to finish. Once your capture is completed, you can use the output trace file to start the second phase: replaying the trace file on your target servers.   
 Check out this FAQ page for frequently asked questions for Capture.  
 
+## Replaying the workload to Azure SQL Database
+The second step is to replay the captured workload on your Azure SQL Database. This needs to be the exact same database you collected capture from. For this exercise use the Azure SQL database we provided.  
+
+### Start New Replay
+1.	Launch DEA and go to All replays screen by clicking on the arrow icon on the left navigation
 
 
 
