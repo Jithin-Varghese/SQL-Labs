@@ -86,6 +86,22 @@ Any validation errors will be reported at the top of the screen.
 <image>  
     
 
+You can see the detailed error logs in DEA Log file, which is usually found in the path %TMP%/DEA. You can open the error log folder by clicking the three dots in the error notification panel.  
+Upon passing all the validation checks, the application will automatically take you to the capture progress screen.  
+
+<iamge>  
+
+You will then see the progress of your capture, including start time, duration, and remaining time.  
+
+To stop the currently running trace, select the capture session name from the grid and click on the stop button.   
+
+Please note that you need to keep DEA application running while the capture session is running.  
+
+Any errors that occur during the capture progress will be displayed in the capture progress screen.  
+
+You can start multiple capture sessions while waiting for this capture to finish. Once your capture is completed, you can use the output trace file to start the second phase: replaying the trace file on your target servers.   
+Check out this FAQ page for frequently asked questions for Capture.  
+
 
 
 
