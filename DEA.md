@@ -38,4 +38,11 @@ To setup a test database on your laptop to use as source for this exercise:
 10.	Once it is 100%, you will get a confirmation. Your database is now created.  
 11.	The last step in setting up the source is using the exe file located here to create a workload.  
 
+## Capturing the workload from your source database
+
+Capturing workload from your source database is the first step in the process and is mandatory. This step captures all the queries on your source server with their timestamps in the specified format (server-side traces or XEvents) which is replayed to target Azure SQL database.  
+Before starting the capture session, please make sure that the source database has backup (in case you are testing production databases), if you already have a backup plan for your production database, start the capture session closer to the last backup. This ensures that minimal data integrity related errors while replaying the workloads.  
+
+
+
 
