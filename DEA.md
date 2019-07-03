@@ -33,5 +33,9 @@ To setup a test database on your laptop to use as source for this exercise:
 9.	It will take a few minutes for the database to be created from the backup. You can see the progress in the right top corner of the window.  
 
     
+<image>  
+    
+10.	Once it is 100%, you will get a confirmation. Your database is now created.  
+11.	The last step in setting up the source is using the exe file located here to create a workload.  
 
 
